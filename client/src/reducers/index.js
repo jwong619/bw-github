@@ -1,9 +1,9 @@
 import {combineReducers} from 'redux';
-import ReposReducer from './reducer-repos';
+import topHundredReposReducer from './reducer-top-hundred-repos.js';
 
 
 const allReducers = combineReducers({
-  repos: ReposReducer
+  topHundredRepos: topHundredReposReducer
 
 });
 

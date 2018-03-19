@@ -12,7 +12,7 @@ const middleware = applyMiddleware();
 const store = createStore(allReducers, applyMiddleware(thunk, promise));
 
 store.subscribe (() => {
-  console.log('---store changed', store.getState());
+  console.log('---STORE CHANGED', store.getState());
 });
 
 
