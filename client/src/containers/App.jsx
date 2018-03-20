@@ -15,7 +15,6 @@ class App extends React.Component {
   }
         //   <img id='logo' src='https://png.icons8.com/metro/1600/github.png' />
 
-        // <span id='pageTitle'> Ranked Repos </span>
 
   render() {
 
@@ -29,11 +28,16 @@ class App extends React.Component {
           </span>
 
           <span id='pageTitle'>
-              Ranked Repos
-            </span>
+              Top Ranked Repos
+          </span>
 
         </div>
 
+
+        <div className='listBar'>
+          <span id='listBarRepoName'> Repository </span>
+          <span id='listBarContributorName'> Top Contributor </span>
+        </div>
 
 
         <div className='topReposList'>

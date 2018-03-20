@@ -17,7 +17,16 @@ class TopHundredReposList extends React.Component {
         return (
           <div key={index}>
             <div className="topRepos">
-              {repo.name}
+
+            <span className='rank'> {repo.id}.</span>
+            <span className='repoName'> {repo.name} </span>
+            <span className='contributor'> {repo.topContributor} </span>
+            <span> <img className='contributorImage' src='http://www.iconninja.com/files/886/846/374/github-social-online-media-icon.png'/> </span>
+
+
+
+
+
             </div>
           </div>
         );

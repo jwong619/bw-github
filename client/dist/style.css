@@ -14,25 +14,47 @@
 }
 
 #logo {
-  margin-left: 5%;
+  position: sticky;
+  margin-left: 3%;
   margin-top: 1%;
   height: 84%;
   width: 16%;
 }
 
 #pageTitle {
-  padding-left: 22px;
+  padding-left: 20px;
   position: absolute;
   top: 22%;
   font-weight: 700;
   font-size: 75px;
-  font-size: 5vw;
+  font-size: 4vw;
   font-family: helvetica;
 }
 
+
+.listBar {
+  background-color: lightblue;
+  margin: 50px auto 0px;
+  width: 50%;
+  height: 20px;
+  font-weight: 700;
+}
+
+#listBarRepoName {
+  padding-left: 40px;
+}
+
+#listBarContributorName {
+  float: right;
+  width: 30%;
+  padding-left: 10px;
+}
+
+
+
 .topReposList {
 /*  background-color: blue;*/
-  margin: 50px auto 0px;
+  margin: 20px auto 0px;
   height: 50px;
   width: 50%;
 }
@@ -41,15 +63,40 @@
   text-align: left;
   background-color: lightgrey;
   border-radius: 4px;
-  height: 40px;
+  height: 25px;
   margin-top: 5px;
-  padding-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-right: 15px;
 }
 
 .topRepos:hover {
   background-color: #b3b3b3;
 }
+
+.rank {
+  padding-left: 10px;
+}
+
+.repoName {
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.contributor {
+/*  background-color: darkgray;*/
+  float: right;
+  width: 30%;
+  padding-left: 10px;
+}
+
+.contributorImage {
+  position: sticky;
+  height: 100%;
+  float: right;
+}
+
+
 
 
 

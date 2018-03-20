@@ -43,6 +43,8 @@ app.get('/topHundredRepos/import/save', (req, res) => {
         // have to pass back obj {topHundredRepos topContributors}
         // then dispatch both later to update
 
+        // ABLE TO SAVE RIGHT NOW BUT GET CORRECT DATA !!!
+
         // db.query(`INSERT INTO repos (rank) VALUES (${repo.id})`)
       // .then(() => {
       //   res.send(topHundredRepos);
