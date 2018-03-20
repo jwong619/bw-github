@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {getTopHundredRepos} from '../actions/index.js';
+import TopHundredReposList from './TopHundredReposList.jsx';
 
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
     return (
       <div>
         In App!!
+        <TopHundredReposList />
       </div>
     );
 

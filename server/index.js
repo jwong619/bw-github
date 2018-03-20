@@ -29,16 +29,18 @@ app.get('/topHundredRepos/import/save', (req, res) => {
       topHundredRepos.push(repo);
     //console.log('repooooosssssss', JSON.parse(result));
 
-      db.query(`INSERT INTO repos (rank) VALUES (${repo.id})`)
-      .then(() => {
-        res.send(topHundredRepos);
-      })
+
+
+      // db.query(`INSERT INTO repos (rank) VALUES (${repo.id})`)
+      // .then(() => {
+      //   res.send(topHundredRepos);
+      // })
 
 
 
     })
 
-    // res.send(topHundredRepos);
+    res.send(topHundredRepos);
 
   })
   // (error, response, body) => {
