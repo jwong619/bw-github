@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Well} from 'react-bootstrap';
 
 
 class TopHundredReposList extends React.Component {
@@ -18,14 +17,10 @@ class TopHundredReposList extends React.Component {
           <div key={index}>
             <div className="topRepos">
 
-            <span className='rank'> {repo.id}.</span>
+            <span className='rank'> {index + 1}.</span>
             <span className='repoName'> {repo.name} </span>
-            <span className='contributor'> {repo.topContributor} </span>
+            <span className='contributor'> {repo.topContributor.login} </span>
             <span> <img className='contributorImage' src='http://www.iconninja.com/files/886/846/374/github-social-online-media-icon.png'/> </span>
-
-
-
-
 
             </div>
           </div>
@@ -38,7 +33,6 @@ class TopHundredReposList extends React.Component {
 
     return (
       <div>
-
 
        {this.createTopHundredReposListEntries()}
 

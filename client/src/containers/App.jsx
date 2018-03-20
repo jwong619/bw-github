@@ -4,6 +4,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {getTopHundredRepos} from '../actions/index.js';
 import TopHundredReposList from './TopHundredReposList.jsx';
+import Search from './Search.jsx';
 
 
 class App extends React.Component {
@@ -11,10 +12,12 @@ class App extends React.Component {
   // on mount
   componentDidMount () {
     console.log('mounted');
-    // this.props.getTopHundredRepos();
+    this.props.getTopHundredRepos();
   }
         //   <img id='logo' src='https://png.icons8.com/metro/1600/github.png' />
-
+        //   <div className='searchBar'>
+        //   <Search />
+        // </div>
 
   render() {
 
