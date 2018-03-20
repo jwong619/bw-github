@@ -11,16 +11,37 @@ class App extends React.Component {
   // on mount
   componentDidMount () {
     console.log('mounted');
-    this.props.getTopHundredRepos();
+    // this.props.getTopHundredRepos();
   }
+        //   <img id='logo' src='https://png.icons8.com/metro/1600/github.png' />
 
+        // <span id='pageTitle'> Ranked Repos </span>
 
   render() {
 
     return (
       <div>
-        In App!!
-        <TopHundredReposList />
+
+        <div id='titleBlock'>
+
+          <span id='logoContainer'>
+            <img id='logo' src='https://png.icons8.com/metro/1600/github.png' />
+          </span>
+
+          <span id='pageTitle'>
+              Ranked Repos
+            </span>
+
+        </div>
+
+
+
+        <div className='topReposList'>
+          <TopHundredReposList />
+        </div>
+
+
+
       </div>
     );
 

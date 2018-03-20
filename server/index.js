@@ -18,6 +18,7 @@ app.listen(3000, function() {
 // not just 100 repos
 app.get('/topHundredRepos/import/save', (req, res) => {
   var topHundredRepos = [];
+  var topContributors = [];
   console.log(' ... going to API now');
   rp({
     url: `https://api.github.com/repositories`,
@@ -25,38 +26,35 @@ app.get('/topHundredRepos/import/save', (req, res) => {
   })
   .then((result) => {
     var data = JSON.parse(result);
+
     data.forEach( (repo) => {
       topHundredRepos.push(repo);
-    //console.log('repooooosssssss', JSON.parse(result));
 
+      rp({
+        url: `https://api.github.com/repos/:${repo.owner}/:${repo.name}/contributors`,
+        headers: {'User-Agent': req.headers[`user-agent`]}
+      })
+      .then((result) => {
+        var contributor = JSON.parse(result);
+        topContributors.push(contributor);
+        res.send(topHundredRepos);
 
+        // constributors - save too
+        // have to pass back obj {topHundredRepos topContributors}
+        // then dispatch both later to update
 
-      // db.query(`INSERT INTO repos (rank) VALUES (${repo.id})`)
+        // db.query(`INSERT INTO repos (rank) VALUES (${repo.id})`)
       // .then(() => {
       //   res.send(topHundredRepos);
       // })
 
-
-
+      })
     })
 
-    res.send(topHundredRepos);
+    // res.send(topHundredRepos);
 
   })
-  // (error, response, body) => {
-  //   var data = JSON.parse(body);
-  //   data.forEach( (repo) => {
-  //     topHundredRepos.push(repo);
-      // lets save top repos in db
-      // need to get contributors
 
-      // db.query(`INSERT INTO repos (rank, name, ownerName) VALUES (${repo.id}, ${repo.name}, ${repo.owner.login})`)
-      // .then(() => {
-      //   res.send(topHundredRepos);
-      // })
-
-    // res.send(topHundredRepos);
-  // })
 
 });
 

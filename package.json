@@ -31,7 +31,7 @@
     "pg-promise": "^6.1.2",
     "postgresql": "0.0.1",
     "react": "^15.4.2",
-    "react-bootstrap": "^0.31.1",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^15.4.2",
     "react-router-page-transition": "^3.0.2",
     "redux": "^3.7.2",
