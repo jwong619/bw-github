@@ -1,6 +1,6 @@
 # bw-github
 
-Application that displays the top 100 most starred github repositories and their corresponding top contributors.
+Application that displays the top 100 most starred github repositories and their corresponding top contributors.(github API)
 
 Author : Julia Wong
 
@@ -15,6 +15,7 @@ Author : Julia Wong
 - Axios
 - PostgreSQL
 - Webpack
+- Github API
 
 React and Redux - Optimize data flow of application with React and Redux. With flux architecture there is easier access to app data from every component. This will help in the future if developer decides to add more features and build more components.
 Reusable components save time.
