@@ -1,6 +1,6 @@
 # bw-github
 
-Application that displays the top 100 most starred github repositories and their corresponding top contributors.(github API)
+Application that displays the top 100 most starred github repositories and their corresponding top contributors.(github API - user must get another token for github api or edit code in server/index.js to use api without a token)
 
 Author : Julia Wong
 
