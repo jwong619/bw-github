@@ -18,7 +18,7 @@ app.post('/topHundredRepos/import/save', (req, res) => {
   var topHundredRepos = [];
 
   rp({
-    url: `https://api.github.com/search/repositories?q=user&sort=stars&order=desc?access_token={window.token}`,
+    url: `https://api.github.com/search/repositories?q=user&sort=stars&order=desc&per_page=100?access_token={window.token}`,
     headers: {'User-Agent': req.headers[`user-agent`]}
   })
   .then((result) => {

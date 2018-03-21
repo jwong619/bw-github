@@ -10,7 +10,6 @@ import Search from './Search.jsx';
 class App extends React.Component {
 
   componentWillMount () {
-    console.log('mounted');
     this.props.getTopHundredRepos();
   }
 
@@ -19,13 +18,15 @@ class App extends React.Component {
     return (
       <div>
         <div id='titleBlock'>
+
           <span id='logoContainer'>
             <img id='logo' src='https://png.icons8.com/metro/1600/github.png' />
+
+            <span id='pageTitle'>
+              Top Ranked Repos
+            </span>
           </span>
 
-          <span id='pageTitle'>
-              Top Ranked Repos
-          </span>
         </div>
 
         <div className='listBar'>
