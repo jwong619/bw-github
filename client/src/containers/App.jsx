@@ -4,7 +4,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {getTopHundredRepos} from '../actions/index.js';
 import TopHundredReposList from './TopHundredReposList.jsx';
-import Search from './Search.jsx';
+// import Search from './Search.jsx';
 
 
 class App extends React.Component {
