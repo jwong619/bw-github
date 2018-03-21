@@ -22,7 +22,7 @@ Reusable components save time.
 
 Express and axios on server side handled asynchronous requests nicely and kept code looking clean and readable. Set up services in the future to handle grabbing data through GITHUB API in portions and store to DB so that the app always has an updated accurate list. *check GITHUB might cache some of their data, and are not current.
 
-DB - Postgresql over Mongo in order to optimize if developer wants to optimaize app and keep unique storage of repositories. However, mongo would have been fine for this smaller app. Possibly switch to ORM vs SQL to condense code or for developer/team preferences. Definitely can also move all queries into a different file and call to queries to clean up code.
+DB - Postgresql over Mongo in order to improve data storage - if developer chooses to optimize app by building services to get all repositories and keep unique storage of repos. Postgresql also allows for relational data designs for other features. However, mongo would have been fine for this smaller app. Possibly switch to ORM vs SQL to condense code or for developer/team preferences. Definitely can also move all queries into a different file and call to queries to clean up code.
 
 
 
