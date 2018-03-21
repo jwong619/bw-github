@@ -26,7 +26,7 @@ DB - Postgresql over Mongo in order to improve data storage - if developer choos
 
 
 
-## Possible future features
+## Future features + optimize
 
 - add a search feature for user to get all repositories from a specific user (would have to design the UI differently, top 100 starred repositories would be a small feature of many)
 
@@ -34,9 +34,12 @@ DB - Postgresql over Mongo in order to improve data storage - if developer choos
 
 - saved list feature - user would be able to create unique repo lists *favorites
 
+- add routes to get repos from db vs api call to reduce lag
+
 
 ## Fix bug issues
 
 - some latency through API calls, future feature to set up services
+- also add route to get top repositories from database to reduce lag 
 - clean up styling
 - API return max list of 30, * check page params to get 100
